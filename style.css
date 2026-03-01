@@ -37,6 +37,7 @@ button,input{
 
     font-family:Courier;
     color:grey;
+    text-align:center;
 }
 
 input[type="checkbox"]{
