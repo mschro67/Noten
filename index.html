@@ -1,0 +1,51 @@
+<!--by mschro67-->
+
+<!DOCTYPE html>
+
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Noten</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <section id="input">
+                <form>
+                    <table id="faecher_in"></table>
+                    <br>
+                    <details>
+                        <summary>Ich Stimme den Nutzungsbedingungen zu. <input id="yes" type="checkbox"></summary>
+                        <ul>
+                            <li>Die eingegebenen Noten werden anonym gespeichert und nicht an Dritte weitergegeben.</li>
+                            <li>Die Noten werden ausschließlich für statistische Zwecke verwendet und nicht zur Identifikation einzelner Personen genutzt.</li>
+                            <li>Die eingegebenen Noten können vom Betreiber der Webseite eingesehen werden, aber nicht mit der Person verknüpft werden.</li>
+                            <li>Jeder Nutzer hat das Recht, dass seine Daten gelöscht werden können.</li>
+                            <li>Jeder Nutzer gibt nur einmal Noten ein.</li>
+                        </ul>
+                    </details>
+                    <br>
+                    <label for="save">Noten speichern</label>
+                    <input id="save" type="checkbox" value="true">
+                    <br><br>
+                    <div>
+                    <input type="submit" value="Auswerten">
+                    </div>
+                </form>
+            </section>
+            <section hidden="true" id="out"></section>
+            <br>
+        </main>
+        <footer>
+            programmiert von Maxi
+            <br>
+            <details>
+                <summary>Frameworks</summary>
+                Node.js, Express, MongoDB
+            </details>
+        </footer>
+        <script src="./script.js" type="module"></script>
+        <script src="./vergleich.js" type="module"></script>
+    </body>
+</html>

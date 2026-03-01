@@ -1,0 +1,67 @@
+body{
+    font-family:'Trebuchet MS', sans-serif;
+}
+
+header,section{
+    border:solid 2px grey;
+    border-radius:20px;
+    padding:2.5px;
+    margin:2.5px;
+}
+
+table{
+    text-align:center;
+    width:100%
+}
+#in td{
+    width:50%;
+}
+#out td{
+    width:33.33%;
+}
+
+td input{
+    width:95%;
+}
+
+details{
+    display:inline;
+}
+
+button,input{
+    border:solid 1px grey;
+    border-radius:50px;
+    padding:2.5px;
+
+    background-color:white;
+
+    font-family:Courier;
+    color:grey;
+}
+
+input[type="checkbox"]{
+    color:grey;
+    background-color:white;
+    border:solid 1px grey;
+    border-radius:10px;
+}
+
+div,header,footer,#out{
+    text-align:center;
+}
+
+button:hover,input:hover{
+    border-color:black;
+    color:black;
+}
+
+footer{
+    color:grey;
+}
+footer a{
+    color:grey;
+    text-decoration:none;
+}
+footer a:hover{
+    font-weight:bold;
+}
