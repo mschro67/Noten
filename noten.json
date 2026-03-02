@@ -26,5 +26,19 @@
     "Deutsch": "2",
     "Geschichte": "1",
     "Religion/Philosophie": "1"
+  },
+  {
+    "Musik": "1",
+    "Kunst": "2",
+    "Mathematik": "3",
+    "Politik": "2",
+    "Englisch": "2",
+    "Erdkunde": "3",
+    "Latein/Französisch": "3",
+    "Biologie": "2",
+    "Sport": "2",
+    "Deutsch": "2",
+    "Geschichte": "2",
+    "Religion/Philosophie": "2"
   }
 ]
