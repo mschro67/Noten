@@ -34,10 +34,9 @@ button,input{
     padding:2.5px;
 
     background-color:white;
-
-    font-family:Courier;
     color:grey;
     text-align:center;
+    font-family:"Trebuchet MS";
 }
 
 input[type="checkbox"]{
@@ -65,4 +64,8 @@ footer a{
 }
 footer a:hover{
     font-weight:bold;
+}
+
+input{
+    font-family:"Courier";
 }
