@@ -22,7 +22,7 @@ function vergleich(id){
             summe += parseFloat(note);
         }
         const durchschnitt = summe / verglichen[fach].length;
-        if (document.getElementById(fach).value != ""){
+        if (document.getElementById(fach).value != 7){
             string += `<tr><td>${fach}</td><td>${durchschnitt.toFixed(2)}</td><td>${document.getElementById(fach).value}</td></tr>`;
         }
     }
