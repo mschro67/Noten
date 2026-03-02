@@ -15,7 +15,7 @@ function vergleich(id){
             }
         }
     }
-    let string = "<table><tr><th>Fach</th><th>Durchschnitt</th><th>Deine Note</th></tr>";
+    let string = "<table><tr><th>Fach</th><th>Klasse</th><th>Deine Note</th></tr>";
     for (const fach in verglichen){
         let summe = 0;
         for (const note of verglichen[fach]){
