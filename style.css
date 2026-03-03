@@ -1,4 +1,4 @@
-body{
+*{
     font-family:'Trebuchet MS', sans-serif;
 }
 
@@ -36,7 +36,7 @@ button,input{
     background-color:white;
     color:grey;
     text-align:center;
-    font-family:"Trebuchet MS";
+    font-family:'Trebuchet MS', sans-serif;
 }
 
 input[type="checkbox"]{
@@ -64,8 +64,4 @@ footer a{
 }
 footer a:hover{
     font-weight:bold;
-}
-
-input{
-    font-family:"Courier";
 }

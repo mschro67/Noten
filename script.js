@@ -15,6 +15,7 @@ document.getElementById("yes").checked = false;
 document.getElementById("save").checked = true;
 
 async function submit(){
+    globalThis.durchschnittSchueler = 0;
     if (document.getElementById("yes").checked) {
         let average = 0;
         let count = 0;
@@ -54,13 +55,48 @@ async function submit(){
         }else{
             output.innerHTML = "Bitte geben Sie mindestens eine gültige Note ein.";
         }
-        output.innerHTML = `Durchschnitt: ${Math.floor(average*100)/100} <br> <button onclick="vergleich()">Vergleichen</button>`;
         
+        output.innerHTML = `Durchschnitt: ${Math.floor(average*100)/100} <br> <button onclick="vergleich()">Vergleichen</button>`;
+        durchschnittSchueler = Math.floor(average*100)/100;
     } else {
         output.innerHTML = "Bitte stimme den Nutzungsbedingungen zu.";
         output.hidden = false;
     }
 }
+
+let verglichen = {};
+let alle = 0;
+
+function vergleich(id){
+    globalThis.durchschnittSchueler = 0;
+    for (const schueler of noten){
+        for (const fach in schueler){
+            if (!verglichen[fach]){
+                verglichen[fach] = [schueler[fach]];
+            }else{
+                verglichen[fach].push(schueler[fach]);
+            }
+        }
+    }
+    let string="";
+    for (const fach in verglichen){
+        let summe = 0;
+        for (const note of verglichen[fach]){
+            summe += parseFloat(note);
+        }
+        const durchschnitt = summe / verglichen[fach].length;
+        alle+=durchschnitt;
+        if (document.getElementById(fach).value != 7){
+            string += `<tr><td>${fach}</td><td>${Math.floor(durchschnitt*100)/100}</td><td>${document.getElementById(fach).value}</td></tr>`;
+        }
+    }
+    string+="</table>";
+    alle /= Object.keys(verglichen).length;
+    const string2 = `<table><tr><th>Fach</th><th>Klasse</th><th>Deine Note</th></tr><tr><td><b>Durchschnitt</b></td><td>${Math.floor(alle*100)/100}</td><td>${(durchschnittSchueler!=0 ? durchschnittSchueler : "")}</td></tr>`;
+    output.innerHTML += string2 + string;
+}
+
+window.vergleich = vergleich;
 
 // attach handler to form submission
 window.addEventListener('DOMContentLoaded', () => {
