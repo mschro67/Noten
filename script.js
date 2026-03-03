@@ -68,6 +68,7 @@ let verglichen = {};
 let alle = 0;
 
 function vergleich(id){
+    output.innerHTML="";
     globalThis.durchschnittSchueler = 0;
     for (const schueler of noten){
         for (const fach in schueler){
