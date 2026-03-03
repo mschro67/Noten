@@ -93,7 +93,7 @@ function vergleich(id){
     }
     string+="</table>";
     alle /= Object.keys(verglichen).length;
-    const string2 = `<table><tr><th>Fach</th><th>Klasse</th><th>Deine Note</th></tr><tr><td><b>Durchschnitt</b></td><td>${Math.floor(alle*100)/100}</td><td>${(durchschnittSchueler!=0 ? durchschnittSchueler : "")}</td></tr>`;
+    const string2 = `<table><tr><th>Fach</th><th>Klasse</th><th>Deine Note</th></tr><tr><td><b>Durchschnitt</b></td><td><b>${Math.floor(alle*100)/100}</b></td><td><b>${(durchschnittSchueler!=0 ? durchschnittSchueler : "")}</b></td></tr>`;
     output.innerHTML += string2 + string;
 }
 
