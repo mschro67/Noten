@@ -87,11 +87,11 @@ function vergleich(id){
         }
         const durchschnitt = summe / verglichen[fach].length;
         alle+=durchschnitt;
-        string += `<tr><td>${(document.getElementById(fach).value>Math.ceil(durchschnitt) ? `<b>${fach}</b>` : fach)}</td><td>${Math.ceil(durchschnitt*100)/100}</td>${(document.getElementById(fach).value>durchschnitt ? `<td><b style="color: red;">${document.getElementById(fach).value}</b></td>` : (document.getElementById(fach).value<Math.ceil(durchschnitt*100)/100 ? `<td style="color: green;">${document.getElementById(fach).value}</td>` : `<td>${document.getElementById(fach).value}</td>`))}</tr>`;
+        string += `<tr><td>${(document.getElementById(fach).value>Math.floor(durchschnitt) ? `<b>${fach}</b>` : fach)}</td><td>${Math.ceil(durchschnitt*100)/100}</td>${(document.getElementById(fach).value>durchschnitt ? `<td><b style="color: red;">${document.getElementById(fach).value}</b></td>` : (document.getElementById(fach).value<Math.ceil(durchschnitt*100)/100 ? `<td style="color: green;">${document.getElementById(fach).value}</td>` : `<td>${document.getElementById(fach).value}</td>`))}</tr>`;
     }
     string+="</table>";
     alle /= Object.keys(verglichen).length;
-    const string2 = `<table><tr><th>Fach</th><th>Klasse</th><th>Dein Ergebnis</th></tr><tr><td>Durchschnitt</td><td><b>${Math.ceil(alle*100)/100}</b></td>${(durchschnittSchueler>Math.ceil(alle*100)/100 ? `<td><b style="color: red;">${durchschnittSchueler}</b></td>` : (durchschnittSchueler<Math.floor(alle*100)/100 ? `<td style="color: green;">${durchschnittSchueler}</td>` : `<td>${durchschnittSchueler}</td>`))}</td></tr>`;
+    const string2 = `<table><tr><th>Fach</th><th>Klasse</th><th>Dein Ergebnis</th></tr><tr><td>Durchschnitt</td><td>${Math.ceil(alle*100)/100}</td>${(durchschnittSchueler>Math.ceil(alle*100)/100 ? `<td><b style="color: red;">${durchschnittSchueler}</b></td>` : (durchschnittSchueler<Math.floor(alle*100)/100 ? `<td style="color: green;">${durchschnittSchueler}</td>` : `<td>${durchschnittSchueler}</td>`))}</td></tr>`;
     output.innerHTML += string2 + string;
 }
 
