@@ -152,5 +152,47 @@
     "Deutsch": "4",
     "Geschichte": "4",
     "Religion/Philosophie": "3"
+  },
+  {
+    "Musik": "2",
+    "Kunst": "2",
+    "Mathematik": "3",
+    "Politik": "3",
+    "Englisch": "3",
+    "Erdkunde": "3",
+    "Latein/Französisch": "3",
+    "Biologie": "4",
+    "Sport": "1",
+    "Deutsch": "2",
+    "Geschichte": "3",
+    "Religion/Philosophie": "3"
+  },
+  {
+    "Musik": "2",
+    "Kunst": "2",
+    "Mathematik": "2",
+    "Politik": "3",
+    "Englisch": "2",
+    "Erdkunde": "3",
+    "Latein/Französisch": "3",
+    "Biologie": "3",
+    "Sport": "2",
+    "Deutsch": "2",
+    "Geschichte": "4",
+    "Religion/Philosophie": "4"
+  },
+  {
+    "Musik": "2",
+    "Kunst": "2",
+    "Mathematik": "4",
+    "Politik": "2",
+    "Englisch": "3",
+    "Erdkunde": "2",
+    "Latein/Französisch": "3",
+    "Biologie": "2",
+    "Sport": "3",
+    "Deutsch": "2",
+    "Geschichte": "2",
+    "Religion/Philosophie": "1"
   }
 ]
